@@ -52,25 +52,25 @@ controllers, tuning mode will disable the speed PI controller */
 // Values used to test Hurst Motor "NT Dynamo DMB0224C10002" at 24VDC input.
 // Motor datasheet at www.hurstmfg.com
 /* Motor's number of pole pairs */
-#define NOPOLESPAIRS 5
+#define NOPOLESPAIRS 7
 /* Open loop speed ramp up end value Value in RPM*/
 #define END_SPEED_RPM 500
 /* Nominal speed of the motor in RPM */
-#define NOMINAL_SPEED_RPM    2000
+#define NOMINAL_SPEED_RPM    3000
 /* Maximum speed of the motor in RPM - given by the Motor's manufacturer */
-#define MAXIMUM_SPEED_RPM    3500
+#define MAXIMUM_SPEED_RPM    6000
 
-#define FW_NOMINAL_SPEED_RPM 2000
+#define FW_NOMINAL_SPEED_RPM 3000
 
 /* The following values are given in the xls attached file */
-#define NORM_CURRENT_CONST     0.000671
+#define NORM_CURRENT_CONST     0.000275
 
 /* normalized ls/dt value */
-#define NORM_LSDTBASE 9738
+#define NORM_LSDTBASE 1109
 /* normalized rs value */
 #define NORM_LSDTBASE_SCALINGFACTOR 8
 
-#define NORM_RS  27503
+#define NORM_RS  4434
 #define NORM_RS_SCALINGFACTOR 2
 
 /**********************  support xls file definitions end *********************/
