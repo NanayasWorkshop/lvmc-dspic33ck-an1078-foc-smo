@@ -1,0 +1,330 @@
+EXCEL FILE ANALYSIS: tuning_params_hurst075.xlsx
+============================================================
+
+WORKBOOK INFORMATION:
+Total Worksheets: 1
+Active Sheet: Estimator parameters
+Sheet Names: ['Estimator parameters']
+
+WORKSHEET 1: Estimator parameters
+========================================
+Used Range: A1 to K22
+Dimensions: 22 rows x 11 columns
+
+CELL ANALYSIS:
+--------------------
+Cell B2:
+  Value: 'Input parameters'
+  Type: str
+
+Cell F2:
+  Value: 'Output parameters'
+  Type: str
+
+Cell B5:
+  Value: 'Peak voltage'
+  Type: str
+
+Cell C5:
+  Value: 24
+  Type: int
+
+Cell D5:
+  Value: 'V'
+  Type: str
+
+Cell F5:
+  Value: 'NORM_VOLTAGE_CONST (U0)'
+  Type: str
+
+Cell G5:
+  Value: '=C5/SQRT(3)/2^15*(1-C8/C7)'
+  Type: str
+  Formula: =C5/SQRT(3)/2^15*(1-C8/C7)
+  References: C5, C8, C7
+
+Cell B6:
+  Value: 'Peak current'
+  Type: str
+
+Cell C6:
+  Value: 22
+  Type: int
+
+Cell D6:
+  Value: 'A'
+  Type: str
+
+Cell F6:
+  Value: 'NORM_CURRENT_CONST (I0)'
+  Type: str
+
+Cell G6:
+  Value: '=C6/2^15'
+  Type: str
+  Formula: =C6/2^15
+  References: C6
+
+Cell B7:
+  Value: 'PWM Period (Ts)'
+  Type: str
+
+Cell C7:
+  Value: 5e-05
+  Type: float
+
+Cell D7:
+  Value: 's'
+  Type: str
+
+Cell F7:
+  Value: 'NORM_OMEGA_CONST (W0)'
+  Type: str
+
+Cell G7:
+  Value: '=2*PI()/60'
+  Type: str
+  Formula: =2*PI()/60
+
+Cell B8:
+  Value: 'Deat time'
+  Type: str
+
+Cell C8:
+  Value: 2e-06
+  Type: float
+
+Cell D8:
+  Value: 's'
+  Type: str
+
+Cell B11:
+  Value: 'Pole pairs'
+  Type: str
+
+Cell C11:
+  Value: 5
+  Type: int
+
+Cell D11:
+  Value: '-'
+  Type: str
+
+Cell H11:
+  Value: 'Predivision'
+  Type: str
+
+Cell B12:
+  Value: 'Stator resistance (Rs)'
+  Type: str
+
+Cell C12:
+  Value: 2.03
+  Type: float
+
+Cell D12:
+  Value: 'Ohm'
+  Type: str
+
+Cell F12:
+  Value: 'NORM_RS'
+  Type: str
+
+Cell G12:
+  Value: '=C12/G5*G6*2^15'
+  Type: str
+  Formula: =C12/G5*G6*2^15
+  References: C12, G5, G6
+
+Cell H12:
+  Value: 4
+  Type: int
+
+Cell I12:
+  Value: '=G12/H12'
+  Type: str
+  Formula: =G12/H12
+  References: G12, H12
+
+Cell J12:
+  Value: 'NORM_RS_SCALINGFACTOR 2'
+  Type: str
+
+Cell K12:
+  Value: '2^2 = 4'
+  Type: str
+
+Cell B13:
+  Value: 'Stator inductance (Ls)'
+  Type: str
+
+Cell C13:
+  Value: 0.0023
+  Type: float
+
+Cell D13:
+  Value: 'H'
+  Type: str
+
+Cell F13:
+  Value: 'NORM_LSDTBASE'
+  Type: str
+
+Cell G13:
+  Value: '=C13/G5*G6/C7*2^15'
+  Type: str
+  Formula: =C13/G5*G6/C7*2^15
+  References: C13, G5, G6, C7
+
+Cell H13:
+  Value: '=2^8'
+  Type: str
+  Formula: =2^8
+
+Cell I13:
+  Value: '=G13/H13'
+  Type: str
+  Formula: =G13/H13
+  References: G13, H13
+
+Cell J13:
+  Value: 'NORM_LSDTBASE_SCALINGFACTOR 8'
+  Type: str
+
+Cell K13:
+  Value: '2^8 = 256'
+  Type: str
+
+Cell B14:
+  Value: 'Voltage constant (Kfi)'
+  Type: str
+
+Cell C14:
+  Value: 7.24
+  Type: float
+
+Cell D14:
+  Value: 'Vp/KRPM'
+  Type: str
+
+Cell F14:
+  Value: 'NORM_INVKFIBASE'
+  Type: str
+
+Cell G14:
+  Value: '=G5/G7*SQRT(3)*2*PI()*1000/60/C14*2^15*C11'
+  Type: str
+  Formula: =G5/G7*SQRT(3)*2*PI()*1000/60/C14*2^15*C11
+  References: G5, G7, C14, C11
+
+Cell H14:
+  Value: 2
+  Type: int
+
+Cell I14:
+  Value: '=G14/H14'
+  Type: str
+  Formula: =G14/H14
+  References: G14, H14
+
+Cell B15:
+  Value: 'Nominal speed'
+  Type: str
+
+Cell C15:
+  Value: 2000
+  Type: int
+
+Cell D15:
+  Value: 'RPM'
+  Type: str
+
+Cell F15:
+  Value: 'NORM_DELTAT'
+  Type: str
+
+Cell G15:
+  Value: '=C7*G7/PI()*2^15*2^15'
+  Type: str
+  Formula: =C7*G7/PI()*2^15*2^15
+  References: C7, G7
+
+Cell B16:
+  Value: 'Maximum speed'
+  Type: str
+
+Cell C16:
+  Value: 3500
+  Type: int
+
+Cell D16:
+  Value: 'RPM'
+  Type: str
+
+Cell F17:
+  Value: 'D_ILIMIT_HS'
+  Type: str
+
+Cell G17:
+  Value: '=C16*2/60*C11*C7*2^15'
+  Type: str
+  Formula: =C16*2/60*C11*C7*2^15
+  References: C16, C11, C7
+
+Cell F18:
+  Value: 'D_ILIMIT_LS'
+  Type: str
+
+Cell G18:
+  Value: '=C15*2/60*C11*C7*2^15*8'
+  Type: str
+  Formula: =C15*2/60*C11*C7*2^15*8
+  References: C15, C11, C7
+
+Cell C20:
+  Value: 'Inverter parameter'
+  Type: str
+
+Cell C21:
+  Value: 'Motor parameter'
+  Type: str
+
+Cell C22:
+  Value: 'Constant to set in "userparms.h"'
+  Type: str
+
+FORMULAS SUMMARY:
+--------------------
+G5: =C5/SQRT(3)/2^15*(1-C8/C7)
+G6: =C6/2^15
+G7: =2*PI()/60
+G12: =C12/G5*G6*2^15
+I12: =G12/H12
+G13: =C13/G5*G6/C7*2^15
+H13: =2^8
+I13: =G13/H13
+G14: =G5/G7*SQRT(3)*2*PI()*1000/60/C14*2^15*C11
+I14: =G14/H14
+G15: =C7*G7/PI()*2^15*2^15
+G17: =C16*2/60*C11*C7*2^15
+G18: =C15*2/60*C11*C7*2^15*8
+
+CELL DEPENDENCIES:
+--------------------
+G5 depends on: C5, C8, C7
+G6 depends on: C6
+G12 depends on: C12, G5, G6
+I12 depends on: G12, H12
+G13 depends on: C13, G5, G6, C7
+I13 depends on: G13, H13
+G14 depends on: G5, G7, C14, C11
+I14 depends on: G14, H14
+G15 depends on: C7, G7
+G17 depends on: C16, C11, C7
+G18 depends on: C15, C11, C7
+
+
+============================================================
+
+WORKBOOK NAMED RANGES:
+==============================
