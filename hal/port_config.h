@@ -21,6 +21,4 @@ void SetupGPIOPorts(void);
 #ifdef __cplusplus
     }
 #endif
-#endif      // end of PORTCONFIG_H
-
-
+#endif  
